@@ -1,0 +1,18 @@
+ol{
+    margin-left: 600px;
+    background-color: green;
+    width: 300px;
+    padding: 20px;
+    padding-left: 50px;
+    border-radius: 20px;
+    color: aliceblue;
+}
+ul{
+    margin-left: 600px;
+    color: aliceblue;
+    background-color: green;
+    width: 100px;
+    padding: 20px;
+    padding-left: 50px;
+    border-radius: 20px;
+}
