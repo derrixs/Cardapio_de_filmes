@@ -1,52 +1,139 @@
-body{
-    background-color: #1c1c1c;
-    margin: 0 auto;
+/* === Estilo geral === */
+body {
+  background-color: #1c1c1c;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
 }
 
+/* === Cabeçalho e navegação === */
 #logo {
-    display: flex;
-    align-items: center;
-    background-color: #ff5e00;
-    margin-bottom: 60px;
-    padding: 10px;
-    gap: 20px; /* espaço entre os itens */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff5e00;
+  padding: 10px 200px;
+  gap: 20px;
+}
+
+#logo img {
+  height: 60px;
+  width: auto;
+}
+
+#logo nav {
+  display: flex;
+  gap: 40px;
+}
+
+#logo a {
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#logo a:hover {
+  color: #2b2b2b;
+}
+
+/* === Biografia === */
+
+
+.container {
+  background-color: #3e3e3e;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 1000px;
+}
+
+.container h1 {
+  font-size: 36px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.foto_minha img {
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+.text {
+  flex: 1;
+  min-width: 280px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* === Curiosidades === */
+.containerM {
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.container2 {
+  background-color: #3e3e3e;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 90%;
+}
+
+.textT {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.curiosidades,
+.lugares {
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #ff5e00;
+  margin: 30px 0;
+}
+
+/* === Responsividade === */
+@media (max-width: 900px) {
+  #logo {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
-  
-  #logo img {
-    height: 60px;
+
+  #logo nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container, .container2 {
+    margin: 20px;
     width: auto;
   }
-  
-  #logo a {
-    color: aliceblue;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  #logo a:first-of-type {
-    margin-left: 800px; /* empurra todos os links para a direita do logo */
+
+  .text {
+    width: auto;
   }
 
-.conteiner{
-    margin-left: 250px;
-    background-color: #3e3e3e;
-    padding: 20px;
-    margin-right: 250px;
-    border-radius: 10px;
-}
-.foto_minha img{
-    width: 15cm;
-    border-radius: 10px;
-    
-}
-.text{
-    font-family: Arial, Helvetica, sans-serif;
-    color: aliceblue;
-    width: 500px;
-    font-size: 18px;
-    text-align: justify;
-}
-.flex{
-    display: flex;
-    gap: 20px;
+  .foto_minha img {
+    width: 100%;
+  }
 }

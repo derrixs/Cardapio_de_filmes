@@ -1,66 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../CSS/mim.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../CSS/mim.css">
+  <title>Sobre Mim - Erick Santos</title>
 </head>
 <body>
-    <div id="logo">
-        <img src="../../../Img/logo.svg" alt="">
-        
-        <a href="../filmes/mim.html">Sobre Mim</a>
-        <a href="../filmes/Index/index.html">Início</a>
-        <a href="#">Configuração</a>
-        <a href="#">Minha Lista</a>
+  <!-- Navegação -->
+  <header id="logo">
+    <img src="../../../Img/logo.svg" alt="Logo do site">
+    <nav>
+      <a href="../filmes/mim.html">Sobre Mim</a>
+      <a href="../filmes/Index/index.html">Início</a>
+      <a href="#">Configuração</a>
+      <a href="#">Minha Lista</a>
+    </nav>
+  </header>
+
+  <!-- Seção principal -->
+  <div class="containerM">
+    <section class="container">
+      <!-- Biografia -->
+      <h1 class="text">Biografia</h1>
+
+      <div class="flex">
+        <!-- Foto -->
+        <div class="foto_minha">
+          <img src="../../Img/erick.PNG" alt="Foto de Erick Santos">
+        </div>
+
+        <!-- Texto da biografia -->
+        <div class="text">
+          <p>
+            Olá, meu nome é <strong>Erick Santos Silva</strong>, tenho 15 anos e sou aluno da
+            <strong>Germinare Tech</strong>! Antes de conhecer a escola, eu nem imaginava
+            programar. Bom, antes eu até programei algumas coisas em blocos, mas nada
+            que se compare. Quando passei para a segunda etapa do processo de admissão
+            (o curso de Python), foi quando vi pela primeira vez o poder da programação
+            de verdade.
+          </p>
+          <p>
+            Aprender Python foi como abrir uma porta para um novo mundo. Comecei a
+            entender como a tecnologia funciona por trás das telas e percebi que eu
+            também poderia criar coisas incríveis. A cada aula, minha curiosidade e
+            vontade de aprender só aumentavam.
+          </p>
+          <p>
+            Hoje, como aluno da Germinare Tech, me sinto parte de algo muito maior.
+            Estou cercado de pessoas que também amam tecnologia, inovação e que acreditam
+            no poder do conhecimento. Essa escola está me preparando para o futuro e,
+            mais do que isso, me fazendo acreditar que posso construir meu próprio
+            caminho com as ferramentas certas.
+          </p>
+          <p>
+            E tudo começou com um <code>print("Olá, mundo!")</code>
+          </p>
+        </div>
       </div>
-      
-    <main>
-            <div class="conteiner">
-            <!-- biografia -->
-            <div class=" text">
-                <h1> Biografia</h1>
-            </div>
-            <!-- Foto -->
-            <div class="flex">
-            <div class="foto_minha">
-                <img src="../../Img/erick.PNG" alt="">
-            </div>
-            <!-- texto -->
-            <section class="text">
-                <article>
-                    <p>
-                        Olá, meu nome é Erick Santos Silva, tenho 15 anos e sou um aluno da Germinare Tech! Antes de conhecer a escola, eu nem imaginava programar. Bom, antes eu até programei algumas coisas em blocos, mas nada que se compare. Quando eu passei para a segunda etapa no processo de admissão (o curso de Python), foi quando eu vi pela primeira vez o poder da programação de verdade.
+    </section>
+</div>
+    <!-- Curiosidades -->
+    <section class="containerM">
+      <div class="container2">
+        <h1 class="textT">Curiosidades sobre mim</h1>
+        <ol class="curiosidades text" start="1">
+          <li>Jogo quase todos os esportes que conheço</li>
+          <li>Sou musicista</li>
+          <li>Tenho um ouvido semi-absoluto</li>
+          <li>Gosto de desenhar</li>
+          <li>Toco em uma orquestra</li>
+          <li>Jogo videogame</li>
+          <li>Toco sax e teclado</li>
+        </ol>
 
-                        Aprender Python foi como abrir uma porta para um novo mundo. Comecei a entender como a tecnologia funciona por trás das telas e percebi que eu também poderia criar coisas incríveis. A cada aula, minha curiosidade e vontade de aprender só aumentavam.
-                        
-                        Hoje, como aluno da Germinare Tech, me sinto parte de algo muito maior. Estou cercado de pessoas que também amam tecnologia, inovação e que acreditam no poder do conhecimento. Essa escola está me preparando para o futuro e mais do que isso, me fazendo acreditar que eu posso construir o meu próprio caminho com as ferramentas certas.
-                        
-                        E tudo começou com um "print('Olá, mundo!')"                   </p>
+        <hr>
 
-                         <ol id="curiosidades"start="1", type="i">
-                        <li>Jogo Quase todos os esportes que sonheço</li>
-                        <li>Sou Musicista</li>
-                        <li>Tenho um ouvido semiAbsoluto</li>
-                        <li>Gosto de Desenhar</li>
-                        <li>Toco em uma orquestra</li>
-                        <li>Jogo Videogame</li>
-                        <li>Toco sax e Teclado</li>
-                        </ol>
-                        <hr>
-                        <ul>
-                            <li>Ubatuba</li>
-                            <li>Sapo</li>
-                            <li>Conceição do Mato Dentro</li>
-                            <li>Praia do Felix</li>
-                            
-                        </ul>
-                    </article>
-                </section>
-            </div>
-            </div>
-    </main>
-    
+        <h1 class="textT">Lugares que visitei</h1>
+        <ul class="lugares text">
+          <li>Ubatuba</li>
+          <li>Sapo</li>
+          <li>Conceição do Mato Dentro</li>
+          <li>Praia do Félix</li>
+        </ul>
+      </div>
+    </section>
+
 </body>
 </html>
